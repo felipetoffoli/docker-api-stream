@@ -5,6 +5,8 @@ services:
     container_name: api_stream
     build: .
     restart: always
+    volumes: 
+      - /home:/home
     ports:
       - 5000:5000
     
